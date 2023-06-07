@@ -1,0 +1,19 @@
+.hamburguer {
+    --side: 50px;
+    width: var(--side);
+    height: var(--side);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    gap: 6px;
+}
+
+.hamburguer .line {
+    width: 70%;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}

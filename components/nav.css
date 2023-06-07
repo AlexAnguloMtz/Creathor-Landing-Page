@@ -2,5 +2,9 @@
     height: 70px;
     width: 100%;
     position: fixed;
-    background-color: red;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
 }
