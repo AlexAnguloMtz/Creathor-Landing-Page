@@ -9,15 +9,15 @@
 
 .technologies .cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .technologies .card {
-    width: 50%;
-    height: 140px;
+    width: 50vmin;
+    height: 50vmin;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 0.5em;
 }
 
@@ -32,4 +32,11 @@
 
 .technologies .card img {
     max-width: 95%;
+}
+
+@media screen and (min-width: 450px) {
+    .technologies .card {
+        width: 33vmin;
+        height: 33vmin;
+    }
 }
