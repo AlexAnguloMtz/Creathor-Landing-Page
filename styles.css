@@ -21,6 +21,8 @@
 /* Colors */
 * {
     --primary-color: rgb(143, 94, 3);
+    --primary-color-dark: rgb(107, 71, 3);
+    --primary-color-darkest: rgb(77, 51, 3);
 }
 
 /* Base font family */
