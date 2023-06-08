@@ -4,8 +4,15 @@ const logos = [
     `php`,
     'java',
     'android',
+    'node',
+    'linux',
     'javascript',
-    'linux'
+    'css',
+    'html',
+    'wordpress',
+    'python',
+    'google_cloud',
+    'google_maps'
 ]
 
 logos.forEach(logo => {
