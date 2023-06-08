@@ -1,9 +1,16 @@
 @import url('./styles/nav.css');
 @import url('./styles/hamburguer.css');
 @import url('./styles/logo-button.css');
+@import url('./styles/nav-links.css');
 
+/* Resets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Measures */
+* {
+    --nav-height: 70px;
 }
