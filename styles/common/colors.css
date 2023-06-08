@@ -1,6 +1,6 @@
 * {
-    --primary-color: rgb(212, 139, 43);
-    --primary-color-dark: rgb(192, 122, 31);
-    --primary-color-darkest: rgb(167, 104, 21);
+    --primary-color: #f44c1c;
+    --primary-color-dark: #c7411b;
+    --primary-color-darkest: #92290b;
     --secondary-color: rgb(41, 115, 150);
 }
