@@ -9,6 +9,7 @@
     background-color: transparent;
     border: none;
     gap: 6px;
+    cursor: pointer;
 }
 
 .hamburguer .line {
