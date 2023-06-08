@@ -34,6 +34,7 @@
 @media screen and (min-width: 800px) {
     .hero .overlay .title {
         font-size: 38px;
+        line-height: 65px;
     }
 
     .hero .overlay button {
