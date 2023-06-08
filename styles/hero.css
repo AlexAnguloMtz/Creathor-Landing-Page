@@ -17,12 +17,12 @@
 }
 
 .hero .overlay .title {
-    font-size: 26px;
+    font-size: 30px;
     text-shadow: 0px 0px 5px black;
 }
 
 .hero .overlay button {
     padding: 1em;
     width: 70%;
-    font-size: 16px;
+    font-size: 20px;
 }
