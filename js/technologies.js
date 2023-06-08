@@ -17,7 +17,11 @@ const logos = [
     'amazon_web_services',
     'jquery',
     'swift',
-    'google_analytics'
+    'google_analytics',
+    'windows_server',
+    'google_adsense',
+    'arduino',
+    'mysql'
 ]
 
 logos.forEach(logo => {
