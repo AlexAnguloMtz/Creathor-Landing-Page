@@ -25,12 +25,18 @@
 
 .hero .overlay button {
     padding: 1em;
-    width: min(70%, 500px);
+    width: min(70%, 400px);
     font-size: 20px;
+    box-shadow: 0 0 5px black;
 }
 
 @media screen and (min-width: 800px) {
     .hero .overlay .title {
         font-size: 36px;
+    }
+
+    .hero .overlay button {
+        font-size: 24px;
+        padding: 0.7em;
     }
 }
