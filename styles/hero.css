@@ -20,7 +20,7 @@
 .hero .overlay .title {
     font-size: 30px;
     text-shadow: 0px 0px 5px black;
-    max-width: 600px;
+    width: min(80%, 600px);
 }
 
 .hero .overlay button {
