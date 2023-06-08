@@ -1,0 +1,8 @@
+.logo-button {
+    background-color: transparent;
+    border: none;
+}
+
+.logo-button img {
+    max-width: 80px;
+}
