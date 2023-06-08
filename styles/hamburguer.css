@@ -17,3 +17,19 @@
     background-color: white;
     border-radius: 10px;
 }
+
+.hamburguer.toggled {
+    gap: 0;
+}
+
+.hamburguer.toggled .line.second {
+    display: none;
+}
+
+.hamburguer.toggled .line.first {
+    transform: rotate(45deg) translateY(3px);
+}
+
+.hamburguer.toggled .line.third {
+    transform: rotate(-45deg) translateY(-3px);
+}

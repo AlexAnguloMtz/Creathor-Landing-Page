@@ -1,5 +1,5 @@
-@import url('./components/nav.css');
-@import url('./components/hamburguer.css');
+@import url('./styles/nav.css');
+@import url('./styles/hamburguer.css');
 
 * {
     margin: 0;
