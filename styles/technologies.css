@@ -28,6 +28,11 @@
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: background-color 300ms ease;
+}
+
+.technologies .card .img-container:hover {
+    background-color: rgb(196, 225, 238);
 }
 
 .technologies .card img {
