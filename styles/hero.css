@@ -24,7 +24,7 @@
 }
 
 .hero .overlay button {
-    padding: 1em;
+    padding: 0.6em;
     width: min(70%, 400px);
     font-size: 20px;
     box-shadow: 0 0 5px black;
