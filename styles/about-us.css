@@ -28,13 +28,18 @@
     border-radius: inherit;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
     .about-us .cards {
         display: flex;
         justify-content: space-evenly;
+        gap: 1em;
     }
 
     .about-us .card {
         flex: 1;
+    }
+
+    .about-us .card img {
+        height: 260px;
     }
 }
