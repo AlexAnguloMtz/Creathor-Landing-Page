@@ -1,17 +1,10 @@
-.about-us {
-    padding: 4em 2em;
-}
-
 .about-us .title {
     color: rgb(25, 111, 161);
-    font-size: 28px;
-    text-align: center;
 }
 
-.about-us .text {
-    font-size: 20px;
-    line-height: 34px;
-    padding: 2em 0;
+.home .section .title {
+    font-size: 28px;
+    text-align: center;
 }
 
 .about-us .card {

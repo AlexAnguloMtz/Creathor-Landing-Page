@@ -1,3 +1,18 @@
 .home {
     margin-top: var(--nav-height);
 }
+
+.home .section {
+    padding: 4em 2em;
+}
+
+.home .section .title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.home .text {
+    font-size: 20px;
+    line-height: 34px;
+    padding: 2em 0;
+}
