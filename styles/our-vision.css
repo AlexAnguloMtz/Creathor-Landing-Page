@@ -1,4 +1,9 @@
 .our-vision {
+    padding: 0;
     color: white;
     background-color: var(--secondary-color);
+}
+
+.our-vision img {
+    max-width: 100%;
 }

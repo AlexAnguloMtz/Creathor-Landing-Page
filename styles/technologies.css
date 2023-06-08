@@ -1,0 +1,5 @@
+.technologies {}
+
+.technologies .title {
+    color: var(--secondary-color);
+}
