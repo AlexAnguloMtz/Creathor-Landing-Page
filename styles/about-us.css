@@ -15,13 +15,20 @@
 }
 
 .about-us .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(41, 115, 150);
     border-radius: 16px;
-    padding: 1.5em;
+    padding: 1.5em 0 0 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .about-us .card .title {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
+}
+
+.about-us .card img {
+    max-width: 80%;
 }
