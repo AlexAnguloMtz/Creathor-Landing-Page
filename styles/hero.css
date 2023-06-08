@@ -14,3 +14,8 @@
     justify-content: center;
     gap: 36px;
 }
+
+.hero .overlay button {
+    padding: 1em;
+    width: 70%;
+}
