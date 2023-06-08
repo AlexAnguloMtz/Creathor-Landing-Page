@@ -2,16 +2,11 @@
     color: rgb(25, 111, 161);
 }
 
-.home .section .title {
-    font-size: 28px;
-    text-align: center;
-}
-
 .about-us .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(41, 115, 150);
+    background-color: var(--secondary-color);
     border-radius: 16px;
     padding: 1.5em 1em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
