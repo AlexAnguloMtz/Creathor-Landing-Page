@@ -1,13 +1,14 @@
 .hero {
     background: url('../assets/images/hero.jpg');
-    height: 100vh;
+    height: calc(100vh - var(--nav-height));
     background-size: cover;
     text-align: center;
+    background-repeat: no-repeat;
 }
 
 .hero .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
