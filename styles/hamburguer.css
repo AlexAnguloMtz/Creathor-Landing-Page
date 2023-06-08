@@ -12,8 +12,8 @@
 }
 
 .hamburguer .line {
-    width: 70%;
-    height: 4px;
+    width: 60%;
+    height: 3px;
     background-color: white;
     border-radius: 10px;
 }
@@ -27,9 +27,9 @@
 }
 
 .hamburguer.toggled .line.first {
-    transform: rotate(45deg) translateY(3px);
+    transform: rotate(45deg) translateY(2px);
 }
 
 .hamburguer.toggled .line.third {
-    transform: rotate(-45deg) translateY(-3px);
+    transform: rotate(-45deg) translateY(-2px);
 }
