@@ -20,9 +20,10 @@
     align-items: center;
     background-color: rgb(41, 115, 150);
     border-radius: 16px;
-    padding: 1.5em;
+    padding: 1.5em 1em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     gap: 1em;
+    margin: 2em 0;
 }
 
 .about-us .card .title {
@@ -31,8 +32,9 @@
 }
 
 .about-us .card img {
-    width: 230px;
-    height: 230px;
+    width: 95%;
+    height: 190px;
     object-fit: cover;
+    object-position: center;
     border-radius: inherit;
 }
