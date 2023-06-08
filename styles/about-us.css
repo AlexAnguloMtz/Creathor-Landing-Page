@@ -31,6 +31,8 @@
 }
 
 .about-us .card img {
-    max-width: 100%;
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
     border-radius: inherit;
 }
