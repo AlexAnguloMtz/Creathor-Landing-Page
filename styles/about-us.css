@@ -1,0 +1,9 @@
+.about-us {
+    padding: 2em;
+}
+
+.about-us .title {
+    color: rgb(25, 111, 161);
+    font-size: 26px;
+    text-align: center;
+}
