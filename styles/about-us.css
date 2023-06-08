@@ -2,6 +2,7 @@
     color: rgb(25, 111, 161);
 }
 
+
 .about-us .card {
     display: flex;
     flex-direction: column;
@@ -25,4 +26,10 @@
     object-fit: cover;
     object-position: center;
     border-radius: inherit;
+}
+
+@media screen and (min-width: 700px) {
+    .about-us .cards {
+        display: flex;
+    }
 }
