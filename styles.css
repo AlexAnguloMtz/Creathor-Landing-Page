@@ -1,3 +1,7 @@
+@import url('./styles/colors.css');
+@import url('./styles/fonts.css');
+@import url('./styles/resets.css');
+@import url('./styles/measures.css');
 @import url('./styles/nav.css');
 @import url('./styles/hamburguer.css');
 @import url('./styles/logo-button.css');
@@ -5,35 +9,3 @@
 @import url('./styles/home.css');
 @import url('./styles/hero.css');
 @import url('./styles/button.css');
-
-/* Resets */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Measures */
-* {
-    --nav-height: 70px;
-}
-
-/* Colors */
-* {
-    --primary-color: rgb(143, 94, 3);
-    --primary-color-dark: rgb(107, 71, 3);
-    --primary-color-darkest: rgb(77, 51, 3);
-}
-
-/* Base font family */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-button,
-p,
-a {
-    font-family: Helvetica;
-}
