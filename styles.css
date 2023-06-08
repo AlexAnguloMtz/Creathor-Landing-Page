@@ -2,6 +2,7 @@
 @import url('./styles/hamburguer.css');
 @import url('./styles/logo-button.css');
 @import url('./styles/nav-links.css');
+@import url('./styles/home.css');
 
 /* Resets */
 * {
