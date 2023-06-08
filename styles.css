@@ -1,7 +1,7 @@
-@import url('./styles/colors.css');
-@import url('./styles/fonts.css');
-@import url('./styles/resets.css');
-@import url('./styles/measures.css');
+@import url('./styles/common/colors.css');
+@import url('./styles/common/fonts.css');
+@import url('./styles/common/resets.css');
+@import url('./styles/common/measures.css');
 @import url('./styles/nav.css');
 @import url('./styles/hamburguer.css');
 @import url('./styles/logo-button.css');
