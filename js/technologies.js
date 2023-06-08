@@ -12,7 +12,12 @@ const logos = [
     'wordpress',
     'python',
     'google_cloud',
-    'google_maps'
+    'google_maps',
+    'firebase',
+    'amazon_web_services',
+    'jquery',
+    'swift',
+    'google_analytics'
 ]
 
 logos.forEach(logo => {
