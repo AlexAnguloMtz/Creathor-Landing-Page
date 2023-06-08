@@ -1,12 +1,17 @@
 const basePath = '../assets/technologies-logos';
 
 const logos = [
-    `php.png`,
-    'java.png',
-    'android.png'
+    `php`,
+    'java',
+    'android',
+    'javascript',
 ]
 
-logos.forEach(logo => appendTechnologyCard(`${basePath}/${logo}`, 'php'));
+logos.forEach(logo => {
+    const fullPath = `${basePath}/${logo}.png`;
+    const alt = logo.split('.')[0];
+    appendTechnologyCard(fullPath, alt);
+});
 
 function appendTechnologyCard(image, alt) {
     const img = document.createElement('img');
