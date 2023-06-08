@@ -5,6 +5,7 @@ const logos = [
     'java',
     'android',
     'javascript',
+    'linux'
 ]
 
 logos.forEach(logo => {
