@@ -33,4 +33,8 @@
         display: flex;
         justify-content: space-evenly;
     }
+
+    .about-us .card {
+        flex: 1;
+    }
 }
