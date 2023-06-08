@@ -3,3 +3,8 @@
     border: none;
     cursor: pointer;
 }
+
+.button.primary {
+    background-color: var(--primary-color);
+    color: white;
+}

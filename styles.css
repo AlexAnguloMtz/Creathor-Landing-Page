@@ -18,6 +18,11 @@
     --nav-height: 70px;
 }
 
+/* Colors */
+* {
+    --primary-color: orange;
+}
+
 /* Base font family */
 h1,
 h2,
