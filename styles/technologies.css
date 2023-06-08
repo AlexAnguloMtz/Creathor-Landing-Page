@@ -14,6 +14,7 @@
 
 .technologies .card {
     width: 50%;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
