@@ -19,22 +19,16 @@ const cardsContents = [
 cardsContents.forEach(appendCard);
 
 function appendCard(content) {
-    const card = createElement({ tag: 'article', classes: ['card'] });
 
-    const img = createElement({ tag: 'img' });
-    img.setAttribute('src', '');
+    const img = createElement({ tag: 'img', attributes: [{ name: 'src', value: '' }] });
 
-    const cardBody = createElement({ tag: 'div', classes: ['body'] });
+    const cardTitle = createElement({ tag: 'h1', classes: ['title'], children: [content.title] });
 
-    const cardTitle = createElement({ tag: 'h1', classes: ['title'] });
-    cardTitle.appendChild(document.createTextNode(content.title));
+    const cardText = createElement({ tag: 'p', classes: ['text'], children: [content.text] });
 
-    const cardText = createElement({ tag: 'p', classes: ['text'] });
-    cardText.appendChild(document.createTextNode(content.text));
+    const cardBody = createElement({ tag: 'div', classes: ['body'], children: [cardTitle, cardText] });
 
-    cardBody.append(cardTitle, cardText);
-
-    card.append(img, cardBody);
+    const card = createElement({ tag: 'article', classes: ['card'], children: [img, cardBody] });
 
     document.querySelector('.about-us .cards').append(card);
 
