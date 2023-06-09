@@ -17,6 +17,9 @@
 
 .about-us .card:hover {
     transform: scale(1.1);
+    box-shadow:
+        rgba(0, 0, 0, 0.15) 1.95px 1.95px 20px,
+        rgba(100, 100, 111, 0.2) 0px 7px 40px 10px;
 }
 
 .about-us .card img {

@@ -17,6 +17,18 @@
         display: flex;
     }
 
+    .our-vision .text {
+        line-height: 50px;
+        font-size: 28px;
+    }
+
+    .our-vision .copy-writing {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .our-vision .carousel {
         width: 60%;
     }
