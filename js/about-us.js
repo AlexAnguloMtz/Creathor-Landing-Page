@@ -36,6 +36,6 @@ function appendCard(content) {
 
     card.append(img, cardBody);
 
-    document.getElementById('about-us-cards').append(card);
+    document.querySelector('.about-us .cards').append(card);
 
 }
