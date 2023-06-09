@@ -1,7 +1,8 @@
 * {
-    --primary-color-light: #f57a59;
+    --primary-color-light: #f1896c;
     --primary-color: #f44c1c;
     --primary-color-dark: #c7411b;
     --primary-color-darkest: #92290b;
     --secondary-color: rgb(41, 115, 150);
+    --on-surface-title: rgb(59, 58, 58);
 }
