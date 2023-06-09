@@ -27,10 +27,10 @@ const logos = [
 logos.forEach(logo => {
     const fullPath = `${basePath}/${logo}.png`;
     const alt = logo.split('.')[0];
-    appendTechnologyCard(fullPath, alt);
+    appendLogoCard(fullPath, alt);
 });
 
-function appendTechnologyCard(image, alt) {
+function appendLogoCard(image, alt) {
     const img = document.createElement('img');
     img.setAttribute('src', image);
     img.setAttribute('alt', alt);

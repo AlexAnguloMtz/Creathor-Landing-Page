@@ -32,7 +32,7 @@
 }
 
 .technologies .card .img-container:hover {
-    background-color: rgb(196, 225, 238);
+    background-color: var(--primary-color-light);
     transform: scale(1.1);
 }
 
