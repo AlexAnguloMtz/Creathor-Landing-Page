@@ -26,23 +26,29 @@ const logos = [
 
 logos.forEach(logo => {
     const fullPath = `${basePath}/${logo}.png`;
-    const alt = logo.split('.')[0];
-    appendLogoCard(fullPath, alt);
+    appendLogoCard({ img: { src: fullPath, alt: logo } });
 });
 
-function appendLogoCard(image, alt) {
-    const img = document.createElement('img');
-    img.setAttribute('src', image);
-    img.setAttribute('alt', alt);
+function appendLogoCard({ img: { src, alt } }) {
+    const img = createElement({
+        tag: 'img',
+        attributes: [
+            { name: 'src', value: src },
+            { name: 'alt', value: alt }
+        ]
+    });
 
-    const card = document.createElement('div');
-    card.classList.add('card');
+    const imgContainer = createElement({
+        tag: 'div',
+        classes: ['img-container'],
+        children: [img]
+    });
 
-    const imgContainer = document.createElement('div');
-    imgContainer.classList.add('img-container');
-
-    imgContainer.appendChild(img);
-    card.appendChild(imgContainer);
+    const card = createElement({
+        tag: 'div',
+        classes: ['card'],
+        children: [imgContainer]
+    });
 
     document.querySelector('.technologies .cards').appendChild(card);
 }
