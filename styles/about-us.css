@@ -1,3 +1,7 @@
+.about-us .title {
+    color: var(--secondary-color);
+}
+
 .about-us .cards {
     display: flex;
     flex-direction: column;

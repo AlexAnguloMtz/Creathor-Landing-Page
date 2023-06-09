@@ -1,4 +1,4 @@
-function createElement({ tag, classes = [], attributes = [], children = [] }) {
+export function createElement({ tag, classes = [], attributes = [], children = [] }) {
     const element = document.createElement(tag);
 
     if (classes.length > 0) {

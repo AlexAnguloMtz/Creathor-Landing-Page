@@ -1,3 +1,5 @@
+import { createElement } from './document-utils.js';
+
 const basePath = '../assets/technologies-logos';
 
 const logos = [
@@ -24,12 +26,12 @@ const logos = [
     'mysql'
 ]
 
-logos.forEach(logo => {
-    const fullPath = `${basePath}/${logo}.png`;
-    appendLogoCard({ img: { src: fullPath, alt: logo } });
+logos.forEach(logoName => {
+    const imagePath = `${basePath}/${logoName}.png`;
+    appendLogoCard({ src: imagePath, alt: logoName });
 });
 
-function appendLogoCard({ img: { src, alt } }) {
+function appendLogoCard({ src, alt }) {
     const img = createElement({
         tag: 'img',
         attributes: [
