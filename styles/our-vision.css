@@ -4,6 +4,10 @@
     background-color: var(--secondary-color);
 }
 
+.our-vision .text {
+    text-align: center;
+}
+
 .our-vision .carousel img.second {
     object-position: 35% center;
 }
@@ -15,6 +19,7 @@
 @media screen and (min-width: 800px) {
     .our-vision {
         display: flex;
+        gap: 2em;
     }
 
     .our-vision .text {
@@ -23,13 +28,13 @@
     }
 
     .our-vision .copy-writing {
-        width: 40%;
+        flex: 4;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     .our-vision .carousel {
-        width: 60%;
+        flex: 6;
     }
 }

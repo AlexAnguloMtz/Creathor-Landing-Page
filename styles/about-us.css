@@ -2,6 +2,12 @@
     color: var(--secondary-color);
 }
 
+.about-us .text {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .about-us .cards {
     display: flex;
     flex-direction: column;
@@ -59,5 +65,9 @@
     .about-us .cards {
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    .about-us .text {
+        font-size: 20px;
     }
 }
