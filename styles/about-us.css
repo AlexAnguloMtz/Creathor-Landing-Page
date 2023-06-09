@@ -1,13 +1,13 @@
 .about-us .cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 32px;
 }
 
 .about-us .card {
     width: min(100%, 400px);
-    aspect-ratio: 1 / 1;
     border-radius: 5px;
     box-shadow:
         rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px,
@@ -16,17 +16,30 @@
 
 .about-us .card img {
     display: block;
-    height: 60%;
+    height: clamp(150px, calc(150px + 5vw), 300px);
     background-color: green;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
 }
 
+.about-us .card .body {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
 .about-us .card .title {
-    font-size: 20px;
-    padding: 10px 0;
     font-size: clamp(16px, calc(16px + 1vmin), 22px);
     color: var(--on-surface-title);
+}
+
+.about-us .card .text {
+    font-size: 14px;
+    color: var(--on-surface-text);
+    text-align: center;
+    line-height: 22px;
+    padding: 0;
 }
 
 @media screen and (min-width: 900px) {
