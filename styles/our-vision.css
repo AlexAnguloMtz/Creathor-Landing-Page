@@ -11,3 +11,13 @@
 .our-vision .carousel img.third {
     object-position: 70% center;
 }
+
+@media screen and (min-width: 800px) {
+    .our-vision {
+        display: flex;
+    }
+
+    .our-vision .carousel {
+        width: 60%;
+    }
+}

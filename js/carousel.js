@@ -43,3 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Activate automatic sliding
+setInterval(function () {
+    var nextSlideButton = document.querySelector('.carousel-next');
+    nextSlideButton.click();
+}, 2500);
