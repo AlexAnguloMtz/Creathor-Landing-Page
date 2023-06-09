@@ -19,17 +19,17 @@ const cardsContents = [
 cardsContents.forEach(appendCard);
 
 function appendCard(content) {
-    const card = elementWithClass({ tag: 'article', clazz: 'card' });
+    const card = createElement({ tag: 'article', classes: ['card'] });
 
-    const img = document.createElement('img');
+    const img = createElement({ tag: 'img' });
     img.setAttribute('src', '');
 
-    const cardBody = elementWithClass({ tag: 'div', clazz: 'body' });
+    const cardBody = createElement({ tag: 'div', classes: ['body'] });
 
-    const cardTitle = elementWithClass({ tag: 'h1', clazz: 'title' });
+    const cardTitle = createElement({ tag: 'h1', classes: ['title'] });
     cardTitle.appendChild(document.createTextNode(content.title));
 
-    const cardText = elementWithClass({ tag: 'p', clazz: 'text' });
+    const cardText = createElement({ tag: 'p', classes: ['text'] });
     cardText.appendChild(document.createTextNode(content.text));
 
     cardBody.append(cardTitle, cardText);
@@ -39,10 +39,3 @@ function appendCard(content) {
     document.getElementById('about-us-cards').append(card);
 
 }
-
-function elementWithClass({ tag, clazz }) {
-    const element = document.createElement(tag);
-    element.classList.add(clazz);
-    return element;
-}
-
