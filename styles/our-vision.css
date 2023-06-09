@@ -4,6 +4,10 @@
     background-color: var(--secondary-color);
 }
 
-.our-vision img {
-    max-width: 100%;
+.our-vision .carousel img.second {
+    object-position: 35% center;
+}
+
+.our-vision .carousel img.third {
+    object-position: 70% center;
 }

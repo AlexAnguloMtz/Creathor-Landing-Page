@@ -41,6 +41,14 @@
     align-items: center;
 }
 
+.carousel-prev>* {
+    transform: translateX(-2px) translateY(-2px);
+}
+
+.carousel-next>* {
+    transform: translateX(2px) translateY(-2px);
+}
+
 .carousel-prev:hover,
 .carousel-next:hover {
     background-color: rgba(0, 0, 0, 0.8);
