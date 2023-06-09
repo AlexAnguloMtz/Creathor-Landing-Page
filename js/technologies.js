@@ -44,5 +44,5 @@ function appendLogoCard(image, alt) {
     imgContainer.appendChild(img);
     card.appendChild(imgContainer);
 
-    document.getElementById('technologies-cards').appendChild(card);
+    document.querySelector('.technologies .cards').appendChild(card);
 }
