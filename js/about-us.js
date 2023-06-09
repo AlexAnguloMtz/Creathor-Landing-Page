@@ -1,4 +1,4 @@
-const cardsContents = [
+const cards = [
     {
         title: 'Programación móvil',
         text: `Creamos apps de alto rendimiento para iOS y Android, brindando una experiencia fluida y
@@ -16,20 +16,20 @@ const cardsContents = [
     }
 ]
 
-cardsContents.forEach(appendCard);
+cards.forEach(appendCard);
 
-function appendCard(content) {
+function appendCard(card) {
 
-    const img = createElement({ tag: 'img', attributes: [{ name: 'src', value: '' }] });
+    const cardTitle = createElement({ tag: 'h1', classes: ['title'], children: [card.title] });
 
-    const cardTitle = createElement({ tag: 'h1', classes: ['title'], children: [content.title] });
-
-    const cardText = createElement({ tag: 'p', classes: ['text'], children: [content.text] });
+    const cardText = createElement({ tag: 'p', classes: ['text'], children: [card.text] });
 
     const cardBody = createElement({ tag: 'div', classes: ['body'], children: [cardTitle, cardText] });
 
-    const card = createElement({ tag: 'article', classes: ['card'], children: [img, cardBody] });
+    const img = createElement({ tag: 'img', attributes: [{ name: 'src', value: '' }] });
 
-    document.querySelector('.about-us .cards').append(card);
+    const cardElement = createElement({ tag: 'article', classes: ['card'], children: [img, cardBody] });
+
+    document.querySelector('.about-us .cards').append(cardElement);
 
 }
