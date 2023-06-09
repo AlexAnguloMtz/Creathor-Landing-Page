@@ -1,7 +1,7 @@
 const basePath = '../assets/technologies-logos';
 
 const logos = [
-    `php`,
+    'php',
     'java',
     'android',
     'node',

@@ -9,9 +9,14 @@
 .about-us .card {
     width: min(100%, 400px);
     border-radius: 5px;
+    transition: transform 300ms ease;
     box-shadow:
         rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px,
         rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.about-us .card:hover {
+    transform: scale(1.1);
 }
 
 .about-us .card img {
