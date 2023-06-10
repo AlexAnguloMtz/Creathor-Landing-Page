@@ -1,4 +1,4 @@
-import { card } from './card.js';
+import { renderTemplate } from "./document-utils.js";
 
 const imagesBasePath = '../assets/images/';
 
@@ -29,3 +29,19 @@ function appendCard(cardModel) {
     document.querySelector('.about-us .cards').append(card(cardModel));
 }
 
+function card({ title, text, img: { src, alt } }) {
+    return renderTemplate(`
+        <article class='card'>
+            <img src=${src}
+                alt=${alt}/>
+            <div class='body'>
+                <h1 class='title'>
+                    ${title}
+                </h1>
+                <p class='text'>
+                    ${text}
+                </p>
+            </div>
+        </article>
+    `);
+}
