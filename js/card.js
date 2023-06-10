@@ -1,6 +1,7 @@
-export function card({ title, text, img: { src, alt } }) {
+import { renderTemplate } from "./document-utils.js";
 
-    const card = `
+export const card = ({ title, text, img: { src, alt } }) => {
+    return renderTemplate(`
         <article class='card'>
             <img src=${src}
                 alt=${alt}/>
@@ -13,10 +14,5 @@ export function card({ title, text, img: { src, alt } }) {
                 </p>
             </div>
         </article>
-    `;
-
-    const template = document.createElement('template');
-    template.innerHTML = card;
-
-    return template.content.cloneNode(true);
+    `);
 }
