@@ -25,37 +25,27 @@ const cards = [
 
 cards.forEach(appendCard);
 
-function appendCard(card) {
+function appendCard(cardModel) {
+    document.querySelector('.about-us .cards').append(card(cardModel));
+}
 
-    const cardTitle = createElement({
-        tag: 'h1',
-        classes: ['title'],
-        children: [card.title]
-    });
+function card({ title, text, img: { src, alt } }) {
+    const card = createElement({ tag: 'article', classes: ['card'] });
 
-    const cardText = createElement({
-        tag: 'p',
-        classes: ['text'],
-        children: [card.text]
-    });
+    const template = `
+        <img src=${src}
+            alt=${alt}/>
+        <div class='body'>
+            <h1 class='title'>
+                ${title}
+            </h1>
+            <p class='text'>
+                ${text}
+            </p>
+        </div>
+    `;
 
-    const cardBody = createElement({
-        tag: 'div',
-        classes: ['body'],
-        children: [cardTitle, cardText]
-    });
+    card.innerHTML = template;
 
-    const img = createElement({
-        tag: 'img',
-        attributes: [{ name: 'src', value: card.img.src }]
-    });
-
-    const cardElement = createElement({
-        tag: 'article',
-        classes: ['card'],
-        children: [img, cardBody]
-    });
-
-    document.querySelector('.about-us .cards').append(cardElement);
-
+    return card;
 }
