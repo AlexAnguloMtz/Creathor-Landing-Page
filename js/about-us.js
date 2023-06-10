@@ -1,4 +1,4 @@
-import { createElement } from './document-utils.js';
+import { card } from './card.js';
 
 const imagesBasePath = '../assets/images/';
 
@@ -29,23 +29,3 @@ function appendCard(cardModel) {
     document.querySelector('.about-us .cards').append(card(cardModel));
 }
 
-function card({ title, text, img: { src, alt } }) {
-    const card = createElement({ tag: 'article', classes: ['card'] });
-
-    const template = `
-        <img src=${src}
-            alt=${alt}/>
-        <div class='body'>
-            <h1 class='title'>
-                ${title}
-            </h1>
-            <p class='text'>
-                ${text}
-            </p>
-        </div>
-    `;
-
-    card.innerHTML = template;
-
-    return card;
-}
