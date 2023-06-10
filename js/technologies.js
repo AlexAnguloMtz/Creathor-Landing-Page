@@ -1,4 +1,4 @@
-import { createElement } from './document-utils.js';
+import { renderTemplate } from './document-utils.js';
 
 const basePath = '../assets/technologies-logos';
 
@@ -32,25 +32,15 @@ logos.forEach(logoName => {
 });
 
 function appendLogoCard({ src, alt }) {
-    const img = createElement({
-        tag: 'img',
-        attributes: [
-            { name: 'src', value: src },
-            { name: 'alt', value: alt }
-        ]
-    });
+    document.querySelector('.technologies .cards').appendChild(technologyCard({ src, alt }));
+}
 
-    const imgContainer = createElement({
-        tag: 'div',
-        classes: ['img-container'],
-        children: [img]
-    });
-
-    const card = createElement({
-        tag: 'div',
-        classes: ['card'],
-        children: [imgContainer]
-    });
-
-    document.querySelector('.technologies .cards').appendChild(card);
+function technologyCard({ src, alt }) {
+    return renderTemplate(`
+        <div class='card'>
+            <div class='img-container'>
+                <img src=${src} alt=${alt}>
+            </div>
+        </div>
+    `);
 }
